@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../css/prductosCC.css"> 
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+  <script src="../js/index.js" defer></script>
+  <script src="../js/productosC.JS" defer></script>
+    <style>
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-box">
+            <img src="/Imagenes/LOGO .png" alt="Logo AgroXP" class="logo-img">
+        </div>
+        <div class="flower-container"  id="flower-menu-trigger">
+            <img class="img-flower" src="/logos-iconos/hoja (1).png" alt="">
+            <img class="img-flower" src="/logos-iconos/hoja (1).png" alt="">
+            <img class="img-flower" src="/logos-iconos/hoja (1).png" alt="">
+            <img class="img-flower" src="/logos-iconos/hoja (1).png" alt="">
+       </div>
+
+            <div class="secciton-flower" style="padding-top: 15px;">
+  <span class="close-flower" style="cursor:pointer; position:absolute; top:-3vmax; right:3vw; font-size:3rem; font-weight: 100; z-index:10;color:#12FF21;">&times;</span>
+  <div class="backound-flower-img">
+                    <a href="./productosc.html" class="flower-link" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;">
+                        <img class="flower-secction" src="/logos-iconos/productos Flower.png" alt="">
+                        <p class="text-flower">Productos</p>
+                    </a>
+                </div>
+
+                <div class="backound-flower-img">
+                    <a href="../html/Servicios.html" class="flower-link" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;">
+                        <img class="flower-secction" src="/logos-iconos/llave Servicios.png" alt="">
+                        <p class="text-flower">Servicio Tenico</p>
+                    </a>
+                </div>
+
+                <div class="backound-flower-img">
+                    <a href="./maps.html" class="flower-link" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;">
+                        <img class="flower-secction" src="/logos-iconos/ubicacion flower.png" alt="">
+                        <p class="text-flower">Ubicacion</p>
+                    </a>
+                </div>
+
+                <div class="backound-flower-img">
+                    <a href="./ofertas.html" class="flower-link" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;align-items:center;">
+                        <img class="flower-secction" src="/logos-iconos/ofertas flower.png" alt="">
+                        <p class="text-flower">Ofertas</p>
+                    </a>
+                </div>
+       </div>
+       
+        <nav class="main-nav">
+            <a href="../index.html">Home</a>
+            <a href="../html/productosc.html">Productos</a>
+            <a href="../html/Servicios.html">Servicios</a>
+            <a href="../html/ofertas.html">Ofertas</a>
+        </nav>
+        <div class="header-actions">
+            <div class="ubicacion">
+                <a href="../html/maps.html" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <img src="/logos-iconos/pasador-de-ubicacion.png" class="icono-header" alt="">Ubicación
+                </a>
+            </div>
+            <div class="inicio-sesion">
+                <img src="/logos-iconos/cuenta.png" class="icono-header" alt="">Inicio de sesión
+            </div>
+        </div>
+    </header>
+        <div id="modal-login" class="modal-login">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form" novalidate>
+                <label for="login-email">Gmail:</label>
+                <input type="email" id="login-email" name="email" required placeholder="Ingrese su Gmail">
+                <span class="error-message" id="email-error"></span>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required minlength="6" placeholder="Ingrese su Contraseña">
+                <span class="error-message" id="password-error"></span>
+             <div class="login-links">
+               <p>¿No tiene una cuenta? <a href="#">Cree una.</a></p>
+               <p>¿No puede acceder a su cuenta? <a href="#">Recupérela.</a></p>
+             </div>
+            <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+<article class="productos-container container mt-5 text-start ms-0 fade-in">
+  <h2 class="titulo-morado text-center mb-4">NUESTROS PRODUCTOS</h2>
+  <div class="row ">  
+    <!-- Columna de Listas -->
+<div id="productos-container">
+  <!-- Versión móvil -->
+  <section class="productos-lista mb-4 version-movil">
+    <details>
+      <summary class="productos-titulo" style="cursor:pointer;  list-style: none;">
+        Productos 
+        <img src="/logos-iconos/caret-abajo (1).png" style="width: 1rem; height: 1rem; display: inline; transform: rotate(-90deg); transition: transform 0.2s;" alt="Flecha" class="flecha-icono">
+      </summary>
+      <ul class="productos-items">
+        <li>Tractores</li>
+        <li>Cosechadoras</li>
+        <li>Sembradoras</li>
+        <li>Tolvas</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- Versión escritorio -->
+  <div class="col-2 col-md-4 version-desktop">
+    <section class="productos-lista mb-4">
+      <h3 class="productos-titulo">Productos</h3>
+      <ul class="productos-items">
+        <li>Tractores</li>
+        <li>Cosechadoras</li>
+        <li>Sembradoras</li>
+        <li>Tolvas</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+
+    <!-- Columna de Imágenes -->
+    <div class="col-md-8 fade-in"  style="padding-left:5vw;">
+      <h2>Tractores</h2>
+      <div class="row row-cols-3 g-3 ">
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/pauny 22.png","title":"Pauny XXLs","specs":["Motor: 6 cilindros","Potencia: 220HP","Transmisión: 24x24"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/pauny 22.png" alt="Tractor 1">
+          <p class="desc-producto">Pauny XXLs</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/pAUNY.png","title":"Pauny EVO","specs":["Motor: 4 cilindros","Potencia: 180HP","Transmisión: 12x12"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/pAUNY.png" alt="Tractor 2">
+          <p class="desc-producto">Pauny EVO</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/mASSEY fERUGUSON.jpg","title":"Massey 7755s","specs":["Motor: 6 cilindros","Potencia: 210HP","Transmisión: 18x18"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/mASSEY fERUGUSON.jpg" alt="Tractor 3">
+          <p class="desc-producto">Massey 7755s</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/NEW HOLLAND 1.png","title":"New Holland T6","specs":["Motor: 4 cilindros","Potencia: 145HP","Transmisión: 16x16"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/NEW HOLLAND 1.png" alt="Tractor 4">
+          <p class="desc-producto">New Holland T6</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/Tractor Jhon Deere 1.avif","title":"John Deere 6250","specs":["Motor: 6 cilindros","Potencia: 250HP","Transmisión: 20x20"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/Tractor Jhon Deere 1.avif" alt="Tractor 5">
+          <p class="desc-producto">John Deere 6250</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Tractores/Tractor jd 2.webp","title":"John Deere 5055","specs":["Motor: 3 cilindros","Potencia: 55HP","Transmisión: 8x8"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Tractores/Tractor jd 2.webp" alt="Tractor 6">
+          <p class="desc-producto">John Deere 5055</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 fade-in" style="display: none; padding-left:5vw;">
+        <h2>Cosechadoras</h2>
+      <div class="row row-cols-3 g-3 ">
+        <div class="card-producto" data-producto='{"img":"/Productos/Cosechadoras/claas cosechadora.jpg","title":"Claas 720 Tron","specs":["Motor: 6 cilindros","Potencia: 320HP","Tolva: 9000L"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Cosechadoras/claas cosechadora.jpg" alt="Cosechadora 1">
+          <p class="desc-producto">Claas 720 Tron</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Cosechadoras/Cosechadora new hollands.png","title":"New Holand C7H","specs":["Motor: 6 cilindros","Potencia: 280HP","Tolva: 8000L"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Cosechadoras/Cosechadora new hollands.png" alt="Cosechadora 2">
+          <p class="desc-producto">New Holand C7H</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Cosechadoras/cosechadora new hollands 3.webp","title":"New Holand CC-A","specs":["Motor: 6 cilindros","Potencia: 300HP","Tolva: 8500L"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Cosechadoras/cosechadora new hollands 3.webp" alt="Cosechadora 3">
+          <p class="desc-producto">New Holand CC-A</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Cosechadoras/Cosechadora new holland.webp","title":"New Holand C16H","specs":["Motor: 6 cilindros","Potencia: 340HP","Tolva: 9500L"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Cosechadoras/Cosechadora new holland.webp" alt="Cosechadora 4">
+          <p class="desc-producto">New Holand C16H</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-8 fade-in" style="display: none; padding-left:5vw;">
+        <h2>Sembradoras</h2>
+      <div class="row row-cols-3 g-3 ">
+        <div class="card-producto" data-producto='{"img":"/Productos/Sembradorass/Sembradoras 4.png","title":"Grano Fino John Deere","specs":["Tipo: Grano fino","Ancho: 3m","Filas: 24"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Sembradorass/Sembradoras 4.png" alt="Sembradora 1">
+          <p class="desc-producto">Grano Fino John Deere</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Sembradorass/Sembradoras 2.png","title":"Victoria 4000","specs":["Tipo: Grano grueso","Ancho: 4m","Filas: 32"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Sembradorass/Sembradoras 2.png" alt="Sembradora 2">
+          <p class="desc-producto">Victoria 4000</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Sembradorass/Sembradora 5.png","title":"Gimetal GRM4A Dual","specs":["Tipo: Dual","Ancho: 4.5m","Filas: 36"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Sembradorass/Sembradora 5.png" alt="Sembradora 3">
+          <p class="desc-producto">Gimetal GRM4A Dual</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Sembradorass/Sembradoras 3.png","title":"Gimetal GR","specs":["Tipo: Grano grueso","Ancho: 3.5m","Filas: 28"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Sembradorass/Sembradoras 3.png" alt="Sembradora 4">
+          <p class="desc-producto">Gimetal GR</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Sembradorass/Sembradoras.png","title":"Fercam S300","specs":["Tipo: Grano fino","Ancho: 3.2m","Filas: 20"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Sembradorass/Sembradoras.png" alt="Sembradora 5">
+          <p class="desc-producto">Fercam S300</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-8 fade-in" style="display: none; padding-left:5vw;">
+      <h2>Tolvas</h2>
+      <div class="row row-cols-3 g-3 ">
+        <div class="card-producto" data-producto='{"img":"/Productos/Otros/Tolva 2.jpg","title":"Akron 1814","specs":["Capacidad: 18T","Material: Acero","Ruedas: 4"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Otros/Tolva 2.jpg" alt="Tolva 1">
+          <p class="desc-producto">Akron 1814</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Otros/tolva 3.jpg","title":"Cestari 46000","specs":["Capacidad: 46T","Material: Acero","Ruedas: 6"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Otros/tolva 3.jpg" alt="Tolva 2">
+          <p class="desc-producto">Cestari 46000</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Otros/TOLVA-26-TN-ascanelli-2020.png","title":"Ascanelli Magnum V-26","specs":["Capacidad: 26T","Material: Acero","Ruedas: 4"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Otros/TOLVA-26-TN-ascanelli-2020.png" alt="Tolva 3">
+          <p class="desc-producto">Ascanelli Magnum V-26</p>
+        </div>
+        <div class="card-producto" data-producto='{"img":"/Productos/Otros/Tolvas.jpg","title":"Akron 2632","specs":["Capacidad: 26T","Material: Acero","Ruedas: 4"]}'>
+          <img class="img-fluid imagen-producto" src="/Productos/Otros/Tolvas.jpg" alt="Tolva 4">
+          <p class="desc-producto">Akron 2632</p>
+        </div>
+      </div>
+    </div>
+</article>
+
+<article class="paginacion-productos">
+  <button class="flecha"style="font-size: 20px;">&lt;</button>
+  <button class="pagina">1</button>
+  <button class="pagina">2</button>
+  <button class="pagina">3</button>
+  <button class="pagina">4</button>
+  <button class="flecha" style="font-size: 20px;">&gt;</button>
+</article>
+
+
+
+
+
+
+<!-- Modal Cards -->
+<aside class="card-1-modal" aria-hidden="true" role="dialog" aria-label="Detalle del producto">
+  <div class="card-1-modal__backdrop" data-close-modal></div>
+
+  <div class="card-1-modal__box" role="document">
+    <button class="card-1-modal__close" aria-label="Cerrar modal" data-close-modal>&times;</button>
+
+    <div class="card-1-modal__media">
+      <img class="card-1-modal__img" src="" alt="Imagen del producto">
+    </div>
+
+    <div class="card-1-modal__info">
+      <h3 class="card-1-modal__title">Título del producto</h3>
+      <ul class="card-1-modal__specs list-unstyled">
+        <!-- se llenará dinámicamente -->
+      </ul>
+
+      <ul class="card-1-modal__specs0 list-unstyled">
+        <!-- se llenará dinámicamente -->
+      </ul>
+
+      <div class="card-1-modal__actions">
+        <button class="button-share"><img class="img-buttons-card" src="/logos-iconos/compartir.png" alt="compartir"></button>
+        <button class=" button-card-ubic"><img class="img-buttons-card" src="/logos-iconos/marcador-de-posicion (1).png" alt="Nuestra ubicacion">Ubicación</button>
+        <button class=" button-card-whapp"><img class="img-buttons-card" src="/logos-iconos/whatsapp.png" alt="Contactanos Por Whtsapp">Consultar</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+</body>
+</html>
